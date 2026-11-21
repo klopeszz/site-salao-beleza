@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Conheça o Aurora Beauty Studio, um projeto de portfólio para um salão de cabelo, manicure, sobrancelhas e tratamentos.">
+  <title>Aurora Beauty Studio | Salão de beleza</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#inicio">Pular para o conteúdo</a>
+
+  <header class="header">
+    <div class="container header-content">
+      <a class="brand" href="#inicio">
+        Aurora <span>Beauty Studio</span>
+      </a>
+
+      <button id="menu-button" class="button outline menu-button" type="button"
+        aria-expanded="false" aria-controls="menu" hidden>
+        Menu
+      </button>
+
+      <nav id="menu" aria-label="Navegação principal">
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">O estúdio</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <a class="button outline header-booking" href="#contato">Agendar horário</a>
+    </div>
+  </header>
+
+  <main id="inicio" tabindex="-1">
+    <section class="container hero" aria-labelledby="titulo">
+      <div>
+        <p class="eyebrow">Aurora Beauty Studio</p>
+        <h1 id="titulo">Beleza, cuidado e autoestima <em>em cada detalhe.</em></h1>
+        <p class="hero-description">
+          Cabelo, unhas e sobrancelhas em um espaço pensado para você se sentir
+          à vontade e encontrar um estilo que combine com você.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button" href="#contato">Agendar horário</a>
+          <a class="text-link" href="#servicos">Explorar serviços</a>
+        </div>
+
+        <p class="note">Salão fictício · Projeto de portfólio</p>
+      </div>
+
+      <figure class="hero-photo">
+        <img
+          src="https://images.unsplash.com/photo-1781450090585-1a511b7066d9?auto=format&amp;fit=crop&amp;w=1400&amp;q=80"
+          alt="Interior de um salão com espelhos arqueados e cadeiras de atendimento"
+          width="850" height="1000" fetchpriority="high">
+        <figcaption>Imagem ilustrativa</figcaption>
+      </figure>
+    </section>
+
+    <section id="servicos" class="section services" aria-labelledby="servicos-titulo">
+      <div class="container">
+        <div class="section-heading">
+          <h2 id="servicos-titulo">Serviços do estúdio</h2>
+          <p>Valores iniciais ilustrativos.</p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <p class="eyebrow">A partir de R$ 75</p>
+            <h3>Cabelo</h3>
+            <p>Corte, escova e finalização de acordo com a textura dos fios e a sua rotina.</p>
+            <a href="#contato" data-service="cabelo">Consultar horário para cabelo</a>
+          </article>
+
+          <article class="service-card">
+            <p class="eyebrow">A partir de R$ 40</p>
+            <h3>Manicure</h3>
+            <p>Cuidado com unhas e cutículas, com esmaltação em cores clássicas ou contemporâneas.</p>
+            <a href="#contato" data-service="manicure">Consultar horário para manicure</a>
+          </article>
+
+          <article class="service-card">
+            <p class="eyebrow">A partir de R$ 45</p>
+            <h3>Sobrancelhas</h3>
+            <p>Design que acompanha o formato natural dos fios e valoriza a expressão do rosto.</p>
+            <a href="#contato" data-service="sobrancelhas">Consultar horário para sobrancelhas</a>
+          </article>
+
+          <article class="service-card">
+            <p class="eyebrow">A partir de R$ 90</p>
+            <h3>Tratamentos</h3>
+            <p>Hidratação e nutrição capilar conforme as necessidades dos seus fios.</p>
+            <a href="#contato" data-service="tratamentos">Consultar horário para tratamentos</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="container section about" aria-labelledby="sobre-titulo">
+      <img
+        src="https://images.unsplash.com/photo-1706629504997-c4bfe37f3361?auto=format&amp;fit=crop&amp;w=920&amp;q=78"
+        alt="Estação de salão com cadeira e espelhos em molduras claras"
+        width="900" height="660" loading="lazy" decoding="async">
+
+      <div>
+        <p class="eyebrow">O estúdio</p>
+        <h2 id="sobre-titulo">Um tempo para cuidar de você</h2>
+        <p>
+          No Aurora, cada atendimento começa com uma conversa sobre o que você
+          quer e o que funciona na sua rotina. A proposta é que você saia do
+          estúdio com um resultado que faça sentido no dia a dia.
+        </p>
+      </div>
+    </section>
+
+    <section id="galeria" class="section gallery" aria-labelledby="galeria-titulo">
+      <div class="container">
+        <div class="section-heading">
+          <h2 id="galeria-titulo">Galeria</h2>
+          <p>Fotos ilustrativas usadas como referência para o projeto fictício.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1781450090585-1a511b7066d9?auto=format&amp;fit=crop&amp;w=700&amp;q=76"
+              alt="Vista das cadeiras e dos espelhos de um salão"
+              width="700" height="540" loading="lazy" decoding="async">
+            <figcaption>Ambiente · <a href="https://unsplash.com/photos/_Fy7Kq0w6OI">Barney Goodman</a></figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1674691412909-8405f0a19940?auto=format&amp;fit=crop&amp;w=700&amp;q=76"
+              alt="Mão com unhas esmaltadas"
+              width="700" height="540" loading="lazy" decoding="async">
+            <figcaption>Manicure · <a href="https://unsplash.com/photos/YmQszA5_GkE">Mailén Aguirre</a></figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1706629504997-c4bfe37f3361?auto=format&amp;fit=crop&amp;w=700&amp;q=76"
+              alt="Detalhe dos espelhos e da cadeira de atendimento"
+              width="700" height="540" loading="lazy" decoding="async">
+            <figcaption>Detalhes · <a href="https://unsplash.com/photos/gNAj7uYkAbE">Tile Merchant Ireland</a></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section contact" aria-labelledby="contato-titulo">
+      <div class="container contact-grid">
+        <div>
+          <h2 id="contato-titulo">Agende seu horário</h2>
+          <p>Escolha um serviço para preparar a mensagem de agendamento.</p>
+          <h3>Horários ilustrativos</h3>
+          <p>Terça a sexta, das 9h às 19h<br>Sábado, das 9h às 16h</p>
+        </div>
+
+        <form id="booking">
+          <label for="service">Serviço</label>
+          <select id="service" name="service" required>
+            <option value="">Selecione um serviço</option>
+            <option value="cabelo">Cabelo</option>
+            <option value="manicure">Manicure</option>
+            <option value="sobrancelhas">Sobrancelhas</option>
+            <option value="tratamentos">Tratamentos</option>
+          </select>
+
+          <button id="booking-button" class="button" type="submit" disabled>
+            Agendar pelo WhatsApp
+          </button>
+
+          <p id="booking-note" class="note">
+            Agendamento demonstrativo. O botão mostra uma prévia da mensagem.
+          </p>
+
+          <div id="message-preview" hidden>
+            <label for="message">Prévia da mensagem</label>
+            <textarea id="message" rows="4" readonly></textarea>
+          </div>
+
+          <noscript><p>Ative o JavaScript para testar o agendamento.</p></noscript>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <a class="brand" href="#inicio">Aurora <span>Beauty Studio</span></a>
+      <p>Projeto de portfólio. Marca, preços e horários fictícios. Imagens ilustrativas.</p>
+    </div>
+  </footer>
+</body>
+</html>
